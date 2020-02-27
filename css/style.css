@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #e056fd;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-family: Source sans pro;
+    font-weight: lighter;
+    font-size: 25px;
+    padding: 0 28px;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #130f40;
+    transition: .3s all ease;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition: .3s all ease;
+}
